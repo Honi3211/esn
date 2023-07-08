@@ -1,0 +1,15 @@
+esn content names: 
+1. GAMEBEAT
+2. TOP
+3. NEWS
+4. AFK HISTORY
+5. AFK REVIEW
+
+esn social links:
+1. facebook
+2. instagram
+3. twitch
+4. youtube
+
+
+
