@@ -2,13 +2,12 @@ import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import {
   bg,
-  bg2,
   bg3,
   bg4,
   bg5,
   bg6,
-  bg7,
   bg8,
+  nationalGold,
   ddish,
   mnbc,
   skymedia,
@@ -18,16 +17,18 @@ import {
   premierSports,
   youtube,
   twitch,
-  uuruurUz,
   esnFullDark,
-  esnFullWhite,
-  esnLogoRed,
-  esnPink,
-  esnRed,
+  bronze,
+  silver,
+  gold,
+  international,
   jigjug,
+  esnPink,
 } from "../../public/assets";
 import { faceit } from "../../public/svgs";
 import Channel from "../../components/channel";
+import Division from "../../components/division";
+import Typography from "../../components/typography/typography";
 
 export default function Home() {
   const channels = [
@@ -44,22 +45,40 @@ export default function Home() {
     { src: twitch.default, className: "h-[100px] px-[12px]" },
   ];
 
+  const faceitDiv = [
+    { src: bronze.default, title: "Bronze Division", color: "text-[#B27540]" },
+    { src: silver.default, title: "Silver Division", color: "text-[#D7D7D7]" },
+    { src: gold.default, title: "Gold Division", color: "text-[#E9AF35]" },
+    {
+      src: international.default,
+      title: "International Pro Division",
+      color: "text-[#191D2D]",
+    },
+  ];
+
+  const descPictures = [
+    { src: bg6.default },
+    { src: bg5.default },
+    { src: bg4.default },
+    { src: bg8.default },
+  ];
+
   return (
     <div className="w-full">
       <Header />
       <div className="mt-[60px]"></div>
       <div className="h-full flex flex-col items-center">
-        <div className="h-[700px] w-full flex items-center justify-around bg-white px-[100px]">
-          <h1 className="leading-none font-poppins font-black text-[120px] text-primary">
+        <div className="h-[700px] w-full flex items-center justify-around bg-white p-[100px]">
+          <Typography variant="h1" className="text-primary mr-[50px]">
             GREETINGS <br />
             FROM <span className="text-secondary">ESN</span>
-          </h1>
-          <p className="text-primary font-belanosima w-[700px] text-[30px] break-all">
+          </Typography>
+          <Typography variant="p2" className="text-primary w-[700px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit
             nostrum, modi alias fugiat eaque natus possimus sapiente. Rem eum
             quidem mollitia sed eaque dolore placeat? Aliquam blanditiis
             incidunt qui.
-          </p>
+          </Typography>
         </div>
 
         <img src={bg3.default.src} alt="" />
@@ -112,48 +131,99 @@ export default function Home() {
           <div className="mt-[60px]"></div>
 
           <div className="w-[800px]">
-            <p className="text-primary text-[30px] font-semibold font-belanosima break-all">
+            <Typography variant="p2" className="text-primary">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
               quidem necessitatibus maxime? Dignissimos voluptate reprehenderit
               iste quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
               quibusdam. Temporibus amet doloremque fuga.
-            </p>
+            </Typography>
+
             <div className="mt-[20px]"></div>
-            <p className="text-primary text-[30px]  font-belanosima break-all">
+
+            <Typography variant="p1" className="text-primary">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
               quidem necessitatibus maxime? Dignissimos voluptate reprehenderit
               iste quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
               quibusdam. Temporibus amet doloremque fuga.
-            </p>
+            </Typography>
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center py-[100px]">
-          <p className="text-white font-poppins font-black text-[100px]">
-            WATCH US ON <span className="text-secondary">SOCIAL</span>
-          </p>
+        <div className="w-full bg-[#A52733] p-[100px] flex flex-col items-center">
+          <Typography variant="title" className="text-white">
+            WE HAVE <span className="text-triory">DIVISIONS</span> FOR PLAYERS
+            ON FACEIT
+          </Typography>
+
           <div className="mt-[40px]"></div>
-          <div className="flex items-center flex-wrap">
-            {socials.map((social, index) => {
+
+          <div className="w-full flex justify-around px-[50px]">
+            {faceitDiv.map((div, index) => {
               return (
-                <img src={social.src.src} alt="" className={social.className} />
+                <Division
+                  title={div.title}
+                  src={div.src.src}
+                  color={div.color}
+                  key={index}
+                />
               );
             })}
           </div>
         </div>
 
-        <div className="w-full flex justify-center">
-          <img src={bg6.default.src} alt="" className="h-[450px]" />
-          <img src={bg5.default.src} alt="" className="h-[450px]" />
-          <img src={bg4.default.src} alt="" className="h-[450px]" />
-          <img src={bg8.default.src} alt="" className="h-[450px]" />
+        <div className="w-full bg-white flex items-center p-[100px]">
+          <Typography variant="p1" className="text-primary">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quidem
+            necessitatibus maxime? Dignissimos voluptate reprehenderit iste
+            quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
+            quibusdam. Temporibus amet doloremque fuga. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Non ratione enim magnam quas a,
+            laborum consequuntur rem? Ad, fugit animi!
+          </Typography>
+          <img src={nationalGold.default.src} alt="" className="ml-[100px]" />
+        </div>
+
+        <img src={bg.default.src} alt="" />
+
+        <div className="w-full flex flex-col items-center py-[100px]">
+          <Typography variant="title" className="text-white">
+            WATCH US ON <span className="text-secondary">SOCIAL</span>
+          </Typography>
+
+          <div className="mt-[40px]"></div>
+
+          <div className="flex items-center flex-wrap">
+            {socials.map((social, index) => {
+              return (
+                <img
+                  src={social.src.src}
+                  alt=""
+                  className={social.className}
+                  key={index}
+                />
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="w-full flex justify-center flex-wrap">
+          {descPictures.map((picture, index) => {
+            return (
+              <img
+                src={picture.src.src}
+                className="w-[450px]"
+                alt=""
+                key={index}
+              />
+            );
+          })}
         </div>
 
         <div className="w-full flex flex-col items-center py-[100px] px-[100px]">
           <div className="flex items-center">
-            <p className="text-white font-poppins font-black text-[100px]">
+            <Typography variant="title" className="text-white">
               WATCH US ON <span className="text-secondary">TV</span>
-            </p>
+            </Typography>
             <img
               src={premierSports.default.src}
               alt=""
@@ -162,6 +232,7 @@ export default function Home() {
           </div>
 
           <div className="mt-[40px]"></div>
+
           <div className="flex items-center flex-wrap">
             {channels.map((channel, index) => {
               return (

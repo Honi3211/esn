@@ -14,6 +14,7 @@ export * as esnRed from "./esnRed.png";
 export * as jigjug from "./jigjug.png";
 export * as national from "./national.png";
 export * as uuruurUz from "./uuruurUz.png";
+export * as nationalGold from "./nationalGold.png";
 
 export * as ddish from "./tv/ddish.png";
 export * as mnbc from "./tv/mnbc.png";
@@ -24,3 +25,8 @@ export * as voo from "./tv/voo.png";
 export * as premierSports from "./tv/premierSports.png";
 export * as youtube from "./tv/youtube.png";
 export * as twitch from "./tv/twitch.png";
+
+export * as bronze from "./faceitDiv/bronze.png";
+export * as silver from "./faceitDiv/silver.png";
+export * as gold from "./faceitDiv/gold.png";
+export * as international from "./faceitDiv/international.png";

@@ -17,7 +17,7 @@ const Footer = () => {
     },
     {
       text: "Watch",
-      href: "/content",
+      href: "/watch",
     },
   ];
 
@@ -47,7 +47,11 @@ const Footer = () => {
   return (
     <div className="h-[200px] w-full bg-[#252c3b] flex flex-col justify-center items-center">
       <div className="flex justify-center items-center border-b border-[#ffffff] pb-[20px] ">
-        <img src={esnFullWhite.default.src} alt="" className="w-[100px] mr-[40px]" />
+        <img
+          src={esnFullWhite.default.src}
+          alt=""
+          className="w-[100px] mr-[40px]"
+        />
         <div className="flex justify-around">
           {datas.map((data, index) => {
             return (
@@ -63,13 +67,8 @@ const Footer = () => {
         <div className="flex items-center">
           {icons.map((icon, index) => {
             return (
-              <Link href={icon.href} target="_blank">
-                <img
-                  src={icon.name.src}
-                  alt=""
-                  className={icon.className}
-                  key={index}
-                />
+              <Link href={icon.href} target="_blank" key={index}>
+                <img src={icon.name.src} alt="" className={icon.className} />
               </Link>
             );
           })}

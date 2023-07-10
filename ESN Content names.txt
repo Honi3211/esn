@@ -4,6 +4,7 @@ esn content names:
 3. NEWS
 4. AFK HISTORY
 5. AFK REVIEW
+6. AFK BIO
 
 esn social links:
 1. facebook
@@ -11,5 +12,12 @@ esn social links:
 3. twitch
 4. youtube
 
+esn mottos: 
+1. Монголын электрон спорт, eSports-ын тамирчдыг дэлхийд таниулах эко системийг eSports network бүтээнэ. 
+2. ESN - Хамгийн чанартай видео тоглоом, eSports-той холбоотой контент үйлдвэрлэгч, дамжуулагч, дотоодын болон гадаадын албан ёсны эрхтэй eSports тэмцээн зохион байгуулагч.
+ӨӨРӨӨР ҮЗ!
+
+esn sponsors: 
+1. Toki
 
 
