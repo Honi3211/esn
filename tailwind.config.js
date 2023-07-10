@@ -15,6 +15,13 @@ module.exports = {
         lilitaOne: ["Lilita One", "cursive"],
         nunitoSans: ["Nunito Sans", "sans-serif"],
         permanentMarker: ["Permanent Marker", "cursive"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        primary: "#191D2D",
+        secondary: "#C3202E",
+        triory: "#ffd203",
+        jigjugBgColor: "#D7184B",
       },
     },
   },

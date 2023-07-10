@@ -1,0 +1,26 @@
+export * as bg from "./bg.jpg";
+export * as bg2 from "./bg2.jpg";
+export * as bg3 from "./bg3.jpg";
+export * as bg4 from "./bg4.jpg";
+export * as bg5 from "./bg5.jpg";
+export * as bg6 from "./bg6.jpg";
+export * as bg7 from "./bg7.jpg";
+export * as bg8 from "./bg8.jpg";
+export * as esnFullDark from "./esnFullDark.png";
+export * as esnFullWhite from "./esnFullWhite.png";
+export * as esnLogoRed from "./esnLogoRed.png";
+export * as esnPink from "./esnPink.png";
+export * as esnRed from "./esnRed.png";
+export * as jigjug from "./jigjug.png";
+export * as national from "./national.png";
+export * as uuruurUz from "./uuruurUz.png";
+
+export * as ddish from "./tv/ddish.png";
+export * as mnbc from "./tv/mnbc.png";
+export * as skymedia from "./tv/skymedia.png";
+export * as telecoMongolia from "./tv/telecoMongolia.png";
+export * as univision from "./tv/univision.png";
+export * as voo from "./tv/voo.png";
+export * as premierSports from "./tv/premierSports.png";
+export * as youtube from "./tv/youtube.png";
+export * as twitch from "./tv/twitch.png";
