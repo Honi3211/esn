@@ -69,16 +69,15 @@ export default function Home() {
       <div className="mt-[60px]"></div>
       <div className="h-full flex flex-col items-center">
         <div className="h-[700px] w-full flex items-center justify-around bg-white p-[100px]">
-          <Typography variant="h1" className="text-primary mr-[50px]">
+          <Typography variant="h1" className="text-primary mr-[50px] italic">
             GREETINGS <br />
             FROM <span className="text-secondary">ESN</span>
           </Typography>
-          <Typography variant="p2" className="text-primary w-[700px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit
-            nostrum, modi alias fugiat eaque natus possimus sapiente. Rem eum
-            quidem mollitia sed eaque dolore placeat? Aliquam blanditiis
-            incidunt qui.
-          </Typography>
+          <h1 className="text-primary w-[700px] font-bold italic font-nunitoSans text-[30px]">
+            Хамгийн чанартай видео тоглоом, eSport-той холбоотой контент
+            үйлдвэрлэгч, дамжуулагч, дотоодын болон гадаадын албан ёсны эрхтэй
+            eSports тэмцээн зохион байгуулагч.
+          </h1>
         </div>
 
         <img src={bg3.default.src} alt="" />
@@ -131,7 +130,7 @@ export default function Home() {
           <div className="mt-[60px]"></div>
 
           <div className="w-[800px]">
-            <Typography variant="p2" className="text-primary">
+            <Typography variant="p1" className="text-primary font-semibold">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
               quidem necessitatibus maxime? Dignissimos voluptate reprehenderit
               iste quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
@@ -150,7 +149,7 @@ export default function Home() {
         </div>
 
         <div className="w-full bg-[#A52733] p-[100px] flex flex-col items-center">
-          <Typography variant="title" className="text-white">
+          <Typography variant="title" className="text-white text-center">
             WE HAVE <span className="text-triory">DIVISIONS</span> FOR PLAYERS
             ON FACEIT
           </Typography>
@@ -186,7 +185,7 @@ export default function Home() {
         <img src={bg.default.src} alt="" />
 
         <div className="w-full flex flex-col items-center py-[100px]">
-          <Typography variant="title" className="text-white">
+          <Typography variant="title" className="text-white text-center">
             WATCH US ON <span className="text-secondary">SOCIAL</span>
           </Typography>
 
@@ -221,7 +220,7 @@ export default function Home() {
 
         <div className="w-full flex flex-col items-center py-[100px] px-[100px]">
           <div className="flex items-center">
-            <Typography variant="title" className="text-white">
+            <Typography variant="title" className="text-white text-center">
               WATCH US ON <span className="text-secondary">TV</span>
             </Typography>
             <img

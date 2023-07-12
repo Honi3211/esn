@@ -22,6 +22,7 @@ module.exports = {
         secondary: "#C3202E",
         triory: "#ffd203",
         jigjugBgColor: "#D7184B",
+        secondBgColor: "#22273b",
       },
     },
   },

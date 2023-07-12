@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-export type TypographyTypes = "h1" | "h2" | "p1" | "p2" | "title";
+export type TypographyTypes = "h1" | "h2" | "p1" | "p2" | "title" | "p3";
 
 type Props = {
   variant: TypographyTypes;
@@ -14,11 +14,13 @@ const Typography: FC<Props> = ({ variant, className = "", children }) => {
       case "h1":
         return "leading-none font-poppins font-black text-[120px]";
       case "p1":
-        return "font-belanosima text-[30px] break-all";
+        return "font-belanosima text-[30px]";
       case "p2":
-        return "font-belanosima font-semibold text-[30px] break-all";
+        return "font-poppins text-[30px]";
+      case "p3":
+        return "font-belanosima text-[20px]";
       case "title":
-        return "font-poppins font-black text-[80px] text-center";
+        return "font-poppins font-black text-[80px]";
     }
   };
   return (

@@ -1,10 +1,37 @@
+import { bio1, bio2, bio3, bio4 } from "./thumbnails/afkBio";
+import { history1, history2 } from "./thumbnails/afkHistory";
+import { review1 } from "./thumbnails/afkReview";
+import {
+  gamebeat1,
+  gamebeat2,
+  gamebeat3,
+  gamebeat4,
+  gamebeat5,
+  gamebeat6,
+  gamebeat7,
+  gamebeat8,
+  gamebeat9,
+} from "./thumbnails/gamebeat";
+import {
+  news1,
+  news2,
+  news3,
+  news4,
+  news5,
+  news6,
+  news7,
+  news8,
+  news9,
+} from "./thumbnails/news";
+import { top1, top2, top3, top4, top5, top6, top7 } from "./thumbnails/top";
+
 export const contents = [
   {
-    name: "gamebeat",
+    name: "GAMEBEAT",
     episodes: [
       {
         ep: "1",
-        thumbnail: "",
+        thumbnail: gamebeat1.default.src,
         title: "VALORANT-ЫН ХАМГИЙН ХАМГИЙН",
         duration: "5:25",
         date: "May 6, 2023",
@@ -12,7 +39,7 @@ export const contents = [
       },
       {
         ep: "2",
-        thumbnail: "",
+        thumbnail: gamebeat2.default.src,
         title: "ХАЧИН ЧИМЭЭТЭЙ БУУ ВЭ ?",
         duration: "5:50",
         date: "May 11, 2023",
@@ -20,7 +47,7 @@ export const contents = [
       },
       {
         ep: "3",
-        thumbnail: "",
+        thumbnail: gamebeat3.default.src,
         title: "DOTAГИЙН ХАМГИЙН ХЭЦҮҮ ДУУГ ТААЯ",
         duration: "10:57",
         date: "May 24, 2023",
@@ -28,7 +55,7 @@ export const contents = [
       },
       {
         ep: "4",
-        thumbnail: "",
+        thumbnail: gamebeat4.default.src,
         title: "IHC MANAGER SPARKO",
         duration: "12:08",
         date: "June 2, 2023",
@@ -36,7 +63,7 @@ export const contents = [
       },
       {
         ep: "5",
-        thumbnail: "",
+        thumbnail: gamebeat5.default.src,
         title:
           "ТӨМӨР, ЯЛАЛТ ЭНЭ УДААГИЙН ДУГААРТ Premier Sports Network-ЫНХОН ОРОЛЦЛОО",
         duration: "12:13",
@@ -45,7 +72,7 @@ export const contents = [
       },
       {
         ep: "6",
-        thumbnail: "",
+        thumbnail: gamebeat6.default.src,
         title: "eSPORT ИХ ХОТЫН ГУДМААР",
         duration: "14:07",
         date: "June 15, 2023",
@@ -53,7 +80,7 @@ export const contents = [
       },
       {
         ep: "7",
-        thumbnail: "",
+        thumbnail: gamebeat7.default.src,
         title: "МОНГОЛЧУУД CS:GO ХЭР САЙН МЭДЭХ ВЭ?",
         duration: "13:31",
         date: "June 22, 2023",
@@ -61,7 +88,7 @@ export const contents = [
       },
       {
         ep: "8",
-        thumbnail: "",
+        thumbnail: gamebeat8.default.src,
         title: '"DOTA" гэж мэдэх үү? Part 1',
         duration: "11:16",
         date: "June 30, 2023",
@@ -69,21 +96,22 @@ export const contents = [
       },
       {
         ep: "9",
-        thumbnail: "",
+        thumbnail: gamebeat9.default.src,
         title: '"DOTA" гэж мэдэх үү? Part 2',
         duration: "15:21",
         date: "July 5, 2023",
         href: "https://www.youtube.com/watch?v=-8Ws-FSBv0I",
       },
     ],
-    description: "",
+    description:
+      "Видео тоглоомонд дурлагсад болон тоглогчдод зориулан хүргэдэг GAMEBEAT цуврал маань видео тоглоомны тухай сонирхолтой асуултуудыг тоглогчид, үзэгчдээс асуун тэдний ухааныг сорьдог билээ.",
   },
   {
-    name: "top",
+    name: "TOP",
     episodes: [
       {
         ep: "1",
-        thumbnail: "",
+        thumbnail: top1.default.src,
         title: "БҮХ ЦАГ ҮЕИЙН ХАМГИЙН ИХ БОРЛУУЛАЛТТАЙ TOP 10ТОГЛООМ",
         duration: "4:09",
         date: "May 15, 2023",
@@ -91,7 +119,7 @@ export const contents = [
       },
       {
         ep: "2",
-        thumbnail: "",
+        thumbnail: top2.default.src,
         title: "TOP 10 ХҮЛЭЭЛТЭД ХҮРЧ ЧАДААГҮЙ ТОГЛООМУУД",
         duration: "14:30",
         date: "May 26, 2023",
@@ -99,7 +127,7 @@ export const contents = [
       },
       {
         ep: "3",
-        thumbnail: "",
+        thumbnail: top3.default.src,
         title: "PLAYSTATION 5 SHOWCASE ДЭЭРХ ОНЦЛОХ МЭДЭЭЛЛҮҮД",
         duration: "12:53",
         date: "June 2, 2023",
@@ -107,7 +135,7 @@ export const contents = [
       },
       {
         ep: "4",
-        thumbnail: "",
+        thumbnail: top4.default.src,
         title: "СҮҮЛИЙН ҮЕД ГАРСАН ХАМГИЙН УРТ SINGLE-PLAYER ТОГЛООМНУУД",
         duration: "14:23",
         date: "June 9, 2023",
@@ -115,7 +143,7 @@ export const contents = [
       },
       {
         ep: "5",
-        thumbnail: "",
+        thumbnail: top5.default.src,
         title: "STREET FIGHTER VI TOP ОНЦЛОХ МЭДЭЭНҮҮД",
         duration: "13:05",
         date: "June 16, 2023",
@@ -123,7 +151,7 @@ export const contents = [
       },
       {
         ep: "6",
-        thumbnail: "",
+        thumbnail: top6.default.src,
         title: "SPIDERMAN-Ы TOP 10 SUITS",
         duration: "10:36",
         date: "June 23, 2023",
@@ -131,21 +159,22 @@ export const contents = [
       },
       {
         ep: "7",
-        thumbnail: "",
+        thumbnail: top7.default.src,
         title: "XBOX SHOWCASE 2023",
         duration: "18:05",
         date: "June 30, 2023",
         href: "https://www.youtube.com/watch?v=kBsuzjBB56c",
       },
     ],
-    description: "",
+    description:
+      "Видео тоглоомуудын хамгийн сонирхолтой фактуудыг TOP-10 чартад багтаан хүргэдэг билээ.",
   },
   {
-    name: "news",
+    name: "NEWS",
     episodes: [
       {
         ep: "1",
-        thumbnail: "",
+        thumbnail: news1.default.src,
         title: "Spider-Man 2 энэ ондоо нээлтээ хийх үү?",
         duration: "10:30",
         date: "May 10, 2023",
@@ -153,7 +182,7 @@ export const contents = [
       },
       {
         ep: "2",
-        thumbnail: "",
+        thumbnail: news2.default.src,
         title:
           "CS:GO BLAST PREMIER AND MONGOLZ, APEX LEGENDS MAP ӨӨЧРЛӨЛТҮҮД...",
         duration: "9:43",
@@ -162,7 +191,7 @@ export const contents = [
       },
       {
         ep: "3",
-        thumbnail: "",
+        thumbnail: news3.default.src,
         title:
           "MARIO MOVIE РЕКОРД ЭВДСЭЭР, SV6 ХАМГИЙН ШИЛДЭГ ТУЛААНТ ТОГЛООМ УУ?",
         duration: "11:37",
@@ -171,7 +200,7 @@ export const contents = [
       },
       {
         ep: "4",
-        thumbnail: "",
+        thumbnail: news4.default.src,
         title: "PS5 SHOWCASE, ESN NATIONAL CHAMPIONSHIP DOTA...",
         duration: "15:48",
         date: "May 31, 2023",
@@ -179,7 +208,7 @@ export const contents = [
       },
       {
         ep: "5",
-        thumbnail: "",
+        thumbnail: news5.default.src,
         title: "Team Tough ESN NC 2023 DOTA ЯЛАГЧИД",
         duration: "15:31",
         date: "June 7, 2023",
@@ -187,7 +216,7 @@ export const contents = [
       },
       {
         ep: "6",
-        thumbnail: "",
+        thumbnail: news6.default.src,
         title: "NETFLIX ААА ТОГЛООМ ХИЙНЭ, CDPR-ЫГ SONY АВНА",
         duration: "10:21",
         date: "June 14, 2023",
@@ -195,7 +224,7 @@ export const contents = [
       },
       {
         ep: "7",
-        thumbnail: "",
+        thumbnail: news7.default.src,
         title: "XBOX SHOWCASE, NATIONAL CHAMPIONSHIP 2023",
         duration: "15:33",
         date: "June 21, 2023",
@@ -203,7 +232,7 @@ export const contents = [
       },
       {
         ep: "8",
-        thumbnail: "",
+        thumbnail: news8.default.src,
         title: "NICOLAS CAGE ШИНЭ ТОГЛООМ?, БУУТАЙ ХЭРЭМ",
         duration: "12:26",
         date: "June 28, 2023",
@@ -211,90 +240,91 @@ export const contents = [
       },
       {
         ep: "9",
-        thumbnail: "",
+        thumbnail: news9.default.src,
         title: "CS:GO NATIONAL CHAMPIONS MONGOLZ, HOLLOW KNIGHT 2 NEW INFO...",
         duration: "16:15",
         date: "July 5, 2023",
         href: "https://www.youtube.com/watch?v=JaQpilG1VUk",
       },
     ],
-    description: "",
+    description:
+      "Дэлхий дахинд болон Монголд болж буй видео тоглоомтой холбоотой мэдээ мэдээллийг хүргэдэг билээ.",
   },
   {
-    name: "afk",
-    types: [
+    name: "AFK HISTORY",
+    episodes: [
       {
-        title: "history",
-        episodes: [
-          {
-            ep: "1",
-            thumbnail: "",
-            title: "ВИДЕО ТОГЛООМЫН ТҮҮХ",
-            duration: "18:21",
-            date: "May 7, 2023",
-            href: "https://www.youtube.com/watch?v=JcC9PF8cz0s",
-          },
-          {
-            ep: "2",
-            thumbnail: "",
-            title: "RPG ТОГЛООМЫН ТҮҮХ",
-            duration: "10:26",
-            date: "May 28, 2023",
-            href: "https://www.youtube.com/watch?v=3kWnjympm0Y",
-          },
-        ],
+        ep: "1",
+        thumbnail: history1.default.src,
+        title: "ВИДЕО ТОГЛООМЫН ТҮҮХ",
+        duration: "18:21",
+        date: "May 7, 2023",
+        href: "https://www.youtube.com/watch?v=JcC9PF8cz0s",
       },
       {
-        title: "review",
-        episodes: [
-          {
-            ep: "1",
-            thumbnail: "",
-            title: "SHOOTER BRIEF REVIEW",
-            duration: "10:19",
-            date: "May 14, 2023",
-            href: "https://www.youtube.com/watch?v=br5j9ksuNtM",
-          },
-        ],
-      },
-      {
-        title: "bio",
-        episodes: [
-          {
-            ep: "1",
-            thumbnail: "",
-            title: "LORD GABEN",
-            duration: "9:13",
-            date: "May 20, 2023",
-            href: "https://www.youtube.com/watch?v=jiyP7PJQa2o",
-          },
-          {
-            ep: "2",
-            thumbnail: "",
-            title: "ICE FROG",
-            duration: "11:44",
-            date: "June 12, 2023",
-            href: "https://www.youtube.com/watch?v=Dnpxz3iI7W8",
-          },
-          {
-            ep: "3",
-            thumbnail: "",
-            title: 'S1MPLE "УКРАЙНЫ МЭРГЭН БУУЧ"',
-            duration: "10:22",
-            date: "June 18, 2023",
-            href: "https://www.youtube.com/watch?v=_joSthwRVbA",
-          },
-          {
-            ep: "4",
-            thumbnail: "",
-            title: 'ZYWOO "СОНГОГДСОН НЭГЭН"',
-            duration: "7:35",
-            date: "July 3, 2023",
-            href: "https://www.youtube.com/watch?v=MajeforhdhE",
-          },
-        ],
+        ep: "2",
+        thumbnail: history2.default.src,
+        title: "RPG ТОГЛООМЫН ТҮҮХ",
+        duration: "10:26",
+        date: "May 28, 2023",
+        href: "https://www.youtube.com/watch?v=3kWnjympm0Y",
       },
     ],
-    description: "",
+    description:
+      "Видео тоглоомын үүсэл, түүх, зохиогчид болон уналт сэргэлтийн тухай энэхүү контентэд агуулагдана",
+  },
+  {
+    name: "AFK REVIEW",
+    episodes: [
+      {
+        ep: "1",
+        thumbnail: review1.default.src,
+        title: "SHOOTER BRIEF REVIEW",
+        duration: "10:19",
+        date: "May 14, 2023",
+        href: "https://www.youtube.com/watch?v=br5j9ksuNtM",
+      },
+    ],
+    description:
+      "Видео тоглоомын төрлөөс хамааран сонирхолтой мэдээллүүд энэхүү контентэд агуулагдана",
+  },
+  {
+    name: "AFK BIO",
+    episodes: [
+      {
+        ep: "1",
+        thumbnail: bio1.default.src,
+        title: "LORD GABEN",
+        duration: "9:13",
+        date: "May 20, 2023",
+        href: "https://www.youtube.com/watch?v=jiyP7PJQa2o",
+      },
+      {
+        ep: "2",
+        thumbnail: bio2.default.src,
+        title: "ICE FROG",
+        duration: "11:44",
+        date: "June 12, 2023",
+        href: "https://www.youtube.com/watch?v=Dnpxz3iI7W8",
+      },
+      {
+        ep: "3",
+        thumbnail: bio3.default.src,
+        title: 'S1MPLE "УКРАЙНЫ МЭРГЭН БУУЧ"',
+        duration: "10:22",
+        date: "June 18, 2023",
+        href: "https://www.youtube.com/watch?v=_joSthwRVbA",
+      },
+      {
+        ep: "4",
+        thumbnail: bio4.default.src,
+        title: 'ZYWOO "СОНГОГДСОН НЭГЭН"',
+        duration: "7:35",
+        date: "July 3, 2023",
+        href: "https://www.youtube.com/watch?v=MajeforhdhE",
+      },
+    ],
+    description:
+      "Видео тоглоомын зохиогчид болон мэргэжлийн тоглогчдийн тухай мэдээлэл энэхүү контентэд агуулагдана.",
   },
 ];
