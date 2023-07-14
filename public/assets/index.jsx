@@ -30,3 +30,13 @@ export * as bronze from "./faceitDiv/bronze.png";
 export * as silver from "./faceitDiv/silver.png";
 export * as gold from "./faceitDiv/gold.png";
 export * as international from "./faceitDiv/international.png";
+
+export * as yearCalendar from "./tournYearCal.jpg";
+export * as apex from "./gamesLogo/apex.png";
+export * as csgo from "./gamesLogo/csgo.png";
+export * as dota from "./gamesLogo/dota.png";
+export * as fifa from "./gamesLogo/fifa.png";
+export * as mlbb from "./gamesLogo/mlbb.png";
+export * as pubgM from "./gamesLogo/pubgM.png";
+export * as tekken from "./gamesLogo/tekken.png";
+export * as valorant from "./gamesLogo/valorant.png";

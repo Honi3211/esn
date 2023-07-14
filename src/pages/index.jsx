@@ -182,7 +182,7 @@ export default function Home() {
           <img src={nationalGold.default.src} alt="" className="ml-[100px]" />
         </div>
 
-        <img src={bg.default.src} alt="" />
+        {/* <img src={bg.default.src} alt="" /> */}
 
         <div className="w-full flex flex-col items-center py-[100px]">
           <Typography variant="title" className="text-white text-center">
