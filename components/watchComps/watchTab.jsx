@@ -5,7 +5,7 @@ const WatchTab = ({ title, ep, date, duration, thumbnail, href }) => {
   return (
     <Link href={href} target="_blank">
       <div className="w-[336px] bg-primary rounded-[16px] overflow-hidden group duration-[.3s] relative cursor-pointer">
-        <div className="bg-local bg-no-repeat group-hover:brightness-75 duration-[.3s]">
+        <div className="w-[336px] h-[190px] bg-local bg-no-repeat group-hover:brightness-75 duration-[.3s]">
           <img src={thumbnail} alt="" />
         </div>
         <div className="w-full h-[190px] absolute top-0 opacity-0 group-hover:opacity-100 duration-[.3s] flex justify-center items-center">
