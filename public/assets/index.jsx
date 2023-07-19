@@ -46,6 +46,6 @@ export * as csgoBg from "./gamesBg/csgoBg.png";
 export * as apexBg from "./gamesBg/apexBg.png";
 export * as fifaBg from "./gamesBg/fifaBg.png";
 export * as mlbbBg from "./gamesBg/mlbbBg.png";
-export * as pubgMBg from "./gamesBg/pubgMBg.png";
+export * as pubgMBg from "./gamesBg/pubgMBg.jpg";
 export * as tekkenBg from "./gamesBg/tekkenBg.png";
 export * as valorantBg from "./gamesBg/valorantBg.png";
