@@ -1,5 +1,5 @@
 import YearTab from "./yearTab";
-import { bg } from "../../public/assets";
+import { bg, dotaBg } from "../../public/assets";
 
 const YearLine = ({
   title,
@@ -10,12 +10,16 @@ const YearLine = ({
   isLogoRight = false,
   imgSize,
   game,
+  bgImg,
 }) => {
   return (
     <div>
       {isLogoRight ? (
-        <div className="w-full h-[500px] flex items-center justify-center">
-          <p className="text-[#a5a4a4] w-[350px] font-poppins text-[22px] font-light text-end italic">
+        <div
+          className="w-screen h-[500px] flex items-center justify-center bg-cover"
+          style={{ backgroundImage: `url(${bgImg})` }}
+        >
+          <p className="text-triory w-[350px] font-poppins text-[22px] font-light text-end italic">
             {date}
           </p>
           <div
@@ -36,7 +40,10 @@ const YearLine = ({
           />
         </div>
       ) : (
-        <div className="w-full h-[500px] flex items-center justify-center">
+        <div
+          className="w-screen h-[500px] flex items-center justify-center bg-cover"
+          style={{ backgroundImage: `url(${bgImg})` }}
+        >
           <YearTab text={title} img={img} game={game} imgSize={imgSize} />
           <div
             className={`${
@@ -47,7 +54,7 @@ const YearLine = ({
                 : "border-white"
             } h-full border-[4px] w-0 mx-[50px]`}
           ></div>
-          <p className="text-[#a5a4a4] w-[350px] font-poppins text-[22px] font-light italic">
+          <p className="text-triory w-[350px] font-poppins text-[22px] font-light italic">
             {date}
           </p>
         </div>

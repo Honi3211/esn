@@ -15,13 +15,16 @@ import {
 } from "../../public/assets";
 
 const Tournament = () => {
+
+  
+
   return (
     <div className="h-screen">
       <Header />
 
       <div className="mt-[60px]"></div>
 
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center overflow-hidden">
         <img src={bg.default.src} alt="" className="" />
 
         <div className="mt-[200px]"></div>

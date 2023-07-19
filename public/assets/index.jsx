@@ -40,3 +40,12 @@ export * as mlbb from "./gamesLogo/mlbb.png";
 export * as pubgM from "./gamesLogo/pubgM.png";
 export * as tekken from "./gamesLogo/tekken.png";
 export * as valorant from "./gamesLogo/valorant.png";
+
+export * as dotaBg from "./gamesBg/dotaBg.png";
+export * as csgoBg from "./gamesBg/csgoBg.png";
+export * as apexBg from "./gamesBg/apexBg.png";
+export * as fifaBg from "./gamesBg/fifaBg.png";
+export * as mlbbBg from "./gamesBg/mlbbBg.png";
+export * as pubgMBg from "./gamesBg/pubgMBg.png";
+export * as tekkenBg from "./gamesBg/tekkenBg.png";
+export * as valorantBg from "./gamesBg/valorantBg.png";

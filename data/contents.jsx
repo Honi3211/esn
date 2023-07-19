@@ -328,3 +328,14 @@ export const contents = [
       "Видео тоглоомын зохиогчид болон мэргэжлийн тоглогчдийн тухай мэдээлэл энэхүү контентэд агуулагдана.",
   },
 ];
+
+export const me = {
+  name: "Honilee",
+  nonSleepTime: "18 hours",
+  feeling: "tired",
+  dream: "sleep",
+  futurePlan: "sleep well",
+  dotaPlayedTime: "9 hours",
+  codingTime: "9hours",
+  wordsFromGod: "GO SLEEP B*TCH!",
+};
