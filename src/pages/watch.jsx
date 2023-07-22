@@ -5,7 +5,7 @@ import Footer from "../../components/footer/footer";
 
 const Watch = () => {
   return (
-    <div className="w-full bg-[#22273b]">
+    <div className="w-full">
       <Header />
       <div className="mt-[60px]"></div>
       <div className="w-full flex flex-col p-[100px]">

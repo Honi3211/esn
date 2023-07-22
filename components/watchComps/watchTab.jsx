@@ -4,7 +4,7 @@ import Link from "next/link";
 const WatchTab = ({ title, ep, date, duration, thumbnail, href }) => {
   return (
     <Link href={href} target="_blank">
-      <div className="w-[336px] bg-primary rounded-[16px] overflow-hidden group duration-[.3s] relative cursor-pointer">
+      <div className="w-[336px] bg-[#10121d] rounded-[16px] overflow-hidden group duration-[.3s] relative cursor-pointer">
         <div className="w-[336px] h-[190px] bg-local bg-no-repeat group-hover:brightness-75 duration-[.3s]">
           <img src={thumbnail} alt="" />
         </div>

@@ -34,15 +34,6 @@ const YearlyCalendars = () => {
   return (
     <div className="w-full flex justify-between relative ">
       <div className="w-full flex flex-col items-center">
-        <h1 className="text-white text-[50px] font-poppins font-thin">
-          YEARLY CALENDAR
-        </h1>
-        <p className="text-white text-[50px] font-poppins font-black italic">
-          NATIONAL CHAMPIONSHIP
-        </p>
-
-        <div className="mt-[150px]"></div>
-
         <YearLine
           title={"NATIONAL CHAMPIONSHIP OF "}
           game={"APEX LEGENDS"}
