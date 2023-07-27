@@ -7,7 +7,7 @@ const Division = ({ src, title, className, color }) => {
         className="w-full border-2 border-white rounded-[30px]"
       />
       <div className="mt-[20px]"></div>
-      <p className={`${color} font-poppins font-bold text-[26px] text-center`}>
+      <p className={`${color} font-poppins font-bold text-[26px] text-white text-center`}>
         {title}
       </p>
     </div>

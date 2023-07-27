@@ -31,7 +31,6 @@ import Division from "../../components/division";
 import Typography from "../../components/typography/typography";
 import Button from "../../components/button";
 import { faceitDiv } from "../../data/texts";
-import WatchusFooter from "../../components/footer/watchusfooter";
 
 const About = () => {
   return (
