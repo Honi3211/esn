@@ -1,6 +1,6 @@
 import WatchTab from "./watchTab";
 
-const Tabs = ({ name, content = [] }) => {
+const WatchTabs = ({ name, content = [] }) => {
   return (
     <div className="w-full">
       <h1 className="font-poppins font-black text-white text-[40px] italic">
@@ -29,4 +29,4 @@ const Tabs = ({ name, content = [] }) => {
   );
 };
 
-export default Tabs;
+export default WatchTabs;

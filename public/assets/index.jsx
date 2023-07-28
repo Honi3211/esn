@@ -7,14 +7,12 @@ export * as bg6 from "./bg6.jpg";
 export * as bg7 from "./bg7.jpg";
 export * as bg8 from "./bg8.jpg";
 export * as homeBg1 from "./homeBg1.jpg";
-export * as goldenBg from "./goldenBg.png";
+export * as goldenBg from "./goldenBg.jpg";
 export * as esnFullDark from "./esnFullDark.png";
 export * as esnFullWhite from "./esnFullWhite.png";
 export * as esnLogoRed from "./esnLogoRed.png";
-export * as esnPink from "./esnPink.png";
 export * as esnRed from "./esnRed.jpg";
 export * as jigjug from "./jigjug.png";
-export * as national from "./national.png";
 export * as uuruurUz from "./uuruurUz.png";
 export * as nationalGold from "./nationalGold.png";
 
@@ -33,7 +31,6 @@ export * as silver from "./faceitDiv/silver.jpg";
 export * as gold from "./faceitDiv/gold.jpg";
 export * as international from "./faceitDiv/international.jpg";
 
-export * as yearCalendar from "./tournYearCal.jpg";
 export * as apex from "./gamesLogo/apex.png";
 export * as csgo from "./gamesLogo/csgo.png";
 export * as dota from "./gamesLogo/dota.png";

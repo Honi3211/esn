@@ -24,13 +24,25 @@ import {
   international,
   jigjug,
   esnPink,
+  goldenBg,
+  esnLogoRed,
 } from "../../public/assets";
 import { faceit } from "../../public/svgs";
-import Channel from "../../components/channel";
 import Division from "../../components/division";
 import Typography from "../../components/typography/typography";
 import Button from "../../components/button";
 import { faceitDiv } from "../../data/texts";
+import {
+  champions1,
+  champions3,
+  champions4,
+  players3,
+  workers,
+} from "../../public/assets/players";
+import Title from "../../components/title";
+import Tabs from "../../components/esnTournamentComps/tournTabs";
+import Channel from "../../components/channel";
+import { channels, socials } from "../../data/texts";
 
 const About = () => {
   return (
@@ -38,57 +50,118 @@ const About = () => {
       <Header />
       <div className="mt-[60px]"></div>
       <div className="flex flex-col items-center">
-        <div className="h-[700px] w-full bg-white p-[100px] flex items-center">
-          <div className="w-full flex justify-around">
+        <div className="w-full bg-white px-[200px] py-[200px] flex items-center">
+          <div className="w-full flex justify-between">
             <Typography variant="h1" className="text-primary mr-[50px] italic">
               GREETINGS <br />
               FROM <span className="text-secondary">ESN</span>
             </Typography>
             <div>
-              <h1 className="text-primary w-[700px] font-bold italic font-nunitoSans text-[30px]">
-                Хамгийн чанартай видео тоглоом, eSport-той холбоотой контент
-                үйлдвэрлэгч, дамжуулагч, дотоодын болон гадаадын албан ёсны
-                эрхтэй eSports тэмцээн зохион байгуулагч.
+              <h1 className="text-primary max-w-[700px] italic font-light font-nunitoSans text-[30px]">
+                Бид бол хамгийн чанартай видео тоглоом, электрон спортын
+                холбогдолтой контент үйлдвэрлэгч, дамжуулагч, дотоодын болон
+                гадаадын албан ёсны эрхтэй тэмцээн зохион байгуулагч юм.
               </h1>
               <div className="mt-[20px]"></div>
             </div>
           </div>
         </div>
 
-        <img src={bg3.default.src} alt="" />
+        <img src={players3.default.src} alt="" />
 
-        {/* <div className="w-full px-[50px] py-[50px] bg-jigjugBgColor flex">
-          <div className="flex items-center">
-            <div className="flex flex-col items-center">
-              <img src={jigjug.default.src} alt="" className="w-[400px]" />
-              <p className="text-white text-[50px] font-poppins font-black italic">
-                JIG JUG
-              </p>
-            </div>
-
-            <p className="text-triory text-[50px] font-poppins font-black uppercase px-[10px]">
-              Changed
-            </p>
-
-            <div className="flex flex-col items-center">
-              <img src={esnPink.default.src} alt="" className="w-[400px]" />
-              <p className="text-white text-[50px] font-poppins font-black italic">
-                ESN
-              </p>
-            </div>
-          </div>
-
-          <div className="w-[500px] ml-[50px] flex items-start">
-            <p className="text-white font-belanosima text-[30px] break-all">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro,
-              nobis! Temporibus ab amet dolor minima? Ratione debitis tempore
-              eius porro aspernatur. Doloribus nostrum obcaecati commodi quis,
-              facilis provident dolores quisquam.
+        <div className="w-full py-[100px] px-[300px] bg-white flex flex-col items-center overflow-hidden">
+          <div className="w-full flex justify-between">
+            <Title title={"Champion"} className={"mr-[30px]"} />
+            <p className="text-primary w-[700px] font-nunitoSans text-[30px] font-light italic max-w-[700px]">
+              Бид дотоод улсдаа хамгийн өндөр шагналын сантай тэмцээнүүдийг
+              зохиодгоороо электрон спорт сонирхогч хүүхэд залуусдаа танигдсан
+              аль хэдийн танигдсан билээ. Монголын электрон спортын хөгжилд шинэ
+              зүйл нэмсэн нь зохиогддог{" "}
+              <span className="text-secondary">NATIONAL CHAMPIONSHIP </span>{" "}
+              тэмцээн юм.
             </p>
           </div>
-        </div> */}
+          <div className="mt-[50px]"></div>
+          <p className="w-full text-start font-poppins font-black text-primary text-[50px]">
+            OUR TOURNAMENTS
+          </p>
+          <Tabs />
+        </div>
 
-        <div className="w-full flex justify-around px-[100px] py-[100px] bg-white">
+        <div className="w-full py-[100px] px-[300px] bg-primary flex flex-col items-center overflow-hidden">
+          <div className="w-full flex justify-between">
+            <Title
+              title={"LIVE"}
+              color={"text-white"}
+              className={"mr-[30px]"}
+            />
+            <p className="text-white w-[700px] font-nunitoSans text-[30px] font-extralight italic max-w-[700px]">
+              Бид{" "}
+              <span className="text-secondary">
+                дуу дүрсний өндөр чанартай{" "}
+              </span>
+              гадаадын болон дотоодын тэмцээнүүдийг{" "}
+              <span className="text-secondary">албан ёсны эрхтэй </span> шууд
+              дамжуулдаг. Сошиал платформуудаар болон тв сувгуудаар тус тус шууд
+              дамжуулалт хүргэдэг.
+            </p>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="w-full flex flex-col items-center pt-[100px]">
+              <Typography variant="title" className="text-white text-center">
+                LIVE <span className="text-secondary">PLATFORM</span>
+              </Typography>
+
+              <div className="mt-[40px]"></div>
+
+              <div className="flex items-center flex-wrap">
+                {socials.map((social, index) => {
+                  return (
+                    <img
+                      src={social.src.src}
+                      alt=""
+                      className={social.className}
+                      key={index}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="w-full flex flex-col items-center pt-[50px]">
+              <div className="flex items-center flex-wrap justify-center">
+                <Typography variant="title" className="text-white text-center">
+                  TV <span className="text-secondary">CHANNEL</span>
+                </Typography>
+                <img
+                  src={premierSports.default.src}
+                  alt=""
+                  className="h-[100px] px-[30px]"
+                />
+              </div>
+
+              <div className="mt-[40px]"></div>
+
+              <div className="flex items-center justify-center flex-wrap">
+                {channels.map((channel, index) => {
+                  return (
+                    <Channel
+                      src={channel.src.src}
+                      key={index}
+                      title={channel.title}
+                      className={"px-[12px]"}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src={champions3.default.src} alt="" />
+
+        <div className="w-full flex items-center justify-around py-[100px] px-[200px] bg-white">
           <div className="flex flex-col items-center mx-[50px]">
             <img
               src={esnFullDark.default.src}
@@ -104,26 +177,22 @@ const About = () => {
 
           <div className="mt-[60px]"></div>
 
-          <div className="w-[800px]">
-            <Typography variant="p1" className="text-primary font-semibold">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-              quidem necessitatibus maxime? Dignissimos voluptate reprehenderit
-              iste quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
-              quibusdam. Temporibus amet doloremque fuga.
-            </Typography>
-
-            <div className="mt-[20px]"></div>
-
-            <Typography variant="p1" className="text-primary">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-              quidem necessitatibus maxime? Dignissimos voluptate reprehenderit
-              iste quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
-              quibusdam. Temporibus amet doloremque fuga.
-            </Typography>
+          <div className="w-[700px]">
+            <p className="text-primary w-[700px] font-nunitoSans text-[30px] font-light max-w-[700px]">
+              Бид FACEIT платформ дээр{" "}
+              <span className="text-secondary">дотоодын сервэр</span>{" "}
+              ажиллуулдаг ба энэ нь Монголын Counter-Strike тоглогчдод маш том
+              боломж олгодог. FACEIT тоглогчдийн түвшингөөс хамааран 4 ангилалд
+              хамааран тоглодог ба үүнд{" "}
+              <span className="text-secondary">
+                Bronze, Silver, Gold, International Pro Division-үүд
+              </span>{" "}
+              байдаг.
+            </p>
           </div>
         </div>
 
-        <div className="w-full bg-[#A52733] p-[100px] flex flex-col items-center">
+        <div className="w-full bg-secondary p-[100px] flex flex-col items-center">
           <Typography variant="title" className="text-white text-center">
             WE HAVE <span className="text-triory">DIVISIONS</span> FOR PLAYERS
             ON FACEIT
@@ -145,18 +214,31 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full bg-white flex items-center p-[100px]">
-          <Typography variant="p1" className="text-primary">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quidem
-            necessitatibus maxime? Dignissimos voluptate reprehenderit iste
-            quasi perspiciatis quidem porro autem aut eveniet! Ut, illum
-            quibusdam. Temporibus amet doloremque fuga. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Non ratione enim magnam quas a,
-            laborum consequuntur rem? Ad, fugit animi!
-          </Typography>
-          <img src={nationalGold.default.src} alt="" className="ml-[100px]" />
+        <img src={workers.default.src} alt="" />
+
+        <div className="w-full flex items-center justify-around py-[100px] px-[200px] bg-primary">
+          <img
+            src={jigjug.default.src}
+            alt=""
+            className="w-[300px] h-[300px]"
+          />
+          <img
+            src={esnLogoRed.default.src}
+            alt=""
+            className="w-[300px] h-[300px]"
+          />
+          <p className="text-[30px] w-[700px] text-white font-nunitoSans font-extralight">
+            Хамгийн анх 2019 оны 12 сарын 16-нд{" "}
+            <span className="text-secondary font-light">JIG JUG</span>{" "}
+            нэртэйгээр Монгол дахь хамгийн анхны{" "}
+            <span className="text-secondary font-light">Live Streaming</span>{" "}
+            платформоо танилцуулан олонд танигдсан. Twitch, Douyu зэрэг
+            платформуудтай төстэй механик, ажиллагаатай байсан билээ. Ийнхүү JIG
+            JUG нэрийн доор 2 том тэмцээнийг зохион байгуулсаны эцэст шинэ өнгө
+            төрхтэйгөөр олонд танигдсан нь{" "}
+            <span className="text-secondary font-light">ESN</span> байсан юм.
+          </p>
         </div>
-        {/* <img src={bg.default.src} alt="" /> */}
       </div>
       <Footer />
     </div>

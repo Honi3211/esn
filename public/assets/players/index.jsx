@@ -1,0 +1,9 @@
+export * as champions1 from "./champions1.jpg";
+export * as champions2 from "./champions2.jpg";
+export * as champions3 from "./champions3.jpg";
+export * as champions4 from "./champions4.jpg";
+export * as players1 from "./players1.jpg";
+export * as players2 from "./players2.jpg";
+export * as players3 from "./players3.jpg";
+export * as players4 from "./players4.jpg";
+export * as workers from "./workers.jpg";
