@@ -52,11 +52,15 @@ const Header = () => {
           );
         })}
       </div>
-      <img
-        src={esnLogoRed.default.src}
-        alt=""
-        className="h-full py-[8px] px-[40px] mx-[12px]"
-      />
+
+      <Link href={"/"}>
+        <img
+          src={esnLogoRed.default.src}
+          alt=""
+          className="h-full py-[8px] px-[40px] mx-[12px]"
+        />
+      </Link>
+
       <div className="h-full flex items-center justify-center">
         {datas[1].map((data, index) => {
           return (
