@@ -1,28 +1,18 @@
 import Typography from "../typography/typography";
 import { esnLogoRed } from "../../public/assets";
 
-const Title = ({ title, color, className }) => {
+const Title = ({ title, className }) => {
   return (
     <div className={className}>
-      <div className="flex flex-wrap items-center justify-center">
-        <div className="flex items-center mr-[10px]">
-          <img
-            src={esnLogoRed.default.src}
-            alt=""
-            className="w-[75px] h-[75px]"
-          />
-          <span className="ml-[20px] text-secondary uppercase leading-none text-[50px] italic font-poppins font-black">
-            ESN{" "}
-          </span>
-        </div>
-
-        <p
-          className={`${
-            color ? color : "text-primary"
-          } uppercase leading-none text-[50px] italic font-poppins font-black break-words`}
-        >
+      <div className="flex flex-wrap justify-center items-center mr-[10px]">
+        <img
+          src={esnLogoRed.default.src}
+          alt=""
+          className="w-[75px] h-[75px]"
+        />
+        <span className="ml-[10px] text-secondary uppercase leading-none text-[50px] italic font-poppins font-black">
           {title}
-        </p>
+        </span>
       </div>
     </div>
   );

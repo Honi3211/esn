@@ -90,11 +90,7 @@ const About = () => {
 
         <div className="w-full py-[100px] px-[300px] bg-primary flex flex-col items-center overflow-hidden">
           <div className="w-full flex justify-between">
-            <Title
-              title={"LIVE"}
-              color={"text-white"}
-              className={"mr-[30px]"}
-            />
+            <Title title={"LIVE"} className={"mr-[30px]"} />
             <p className="text-white w-[700px] font-nunitoSans text-[30px] font-extralight italic max-w-[700px]">
               Бид{" "}
               <span className="text-secondary">

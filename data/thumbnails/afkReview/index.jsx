@@ -1,1 +1,1 @@
-export * as review1 from "./afkReview1.png";
+export * as review1 from "./afkReview1.jpg";
