@@ -32,12 +32,8 @@ export default function Home() {
           <div className="flex items-center justify-center flex-wrap">
             {socials.map((social, index) => {
               return (
-                <Link href={social.href} target="_blank">
-                  <img
-                    src={social.src.src}
-                    className={social.className}
-                    key={index}
-                  />
+                <Link href={social.href} target="_blank" key={index}>
+                  <img src={social.src.src} className={social.className} />
                 </Link>
               );
             })}
