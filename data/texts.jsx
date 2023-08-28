@@ -34,8 +34,16 @@ export const channels = [
 ];
 
 export const socials = [
-  { src: youtube.default, className: "h-[100px] px-[12px]" },
-  { src: twitch.default, className: "h-[100px] px-[12px]" },
+  {
+    src: youtube.default,
+    className: "h-[20vw] md:h-[100px] px-[12px]",
+    href: "https://www.youtube.com/@esn.esportsnetwork",
+  },
+  {
+    src: twitch.default,
+    className: "h-[20vw] md:h-[100px] px-[12px]",
+    href: "https://www.twitch.tv/esportsnetwork_live",
+  },
 ];
 
 export const faceitDiv = [
@@ -49,9 +57,5 @@ export const faceitDiv = [
   },
 ];
 
-export const descPictures = [
-  { src: bg6.default },
-  { src: bg5.default },
-  { src: bg4.default },
-  { src: bg8.default },
-];
+export const descPictures1 = [{ src: bg6.default }, { src: bg5.default }];
+export const descPictures2 = [{ src: bg4.default }, { src: bg8.default }];

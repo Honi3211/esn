@@ -21,16 +21,6 @@ import YearLine from "./yearLine";
 import YearTab from "./yearTab";
 
 const YearlyCalendars = () => {
-  // const [scrollYState, setScrollYState] = useState();
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", (e) => {
-
-  //     // console.log(window.scrollY);
-  //     // console.log(scrollYState);
-  //   });
-  // }, []);
-
   return (
     <div className="w-full flex justify-between relative ">
       <div className="w-full flex flex-col items-center">

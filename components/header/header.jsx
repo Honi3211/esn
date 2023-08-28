@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <div
-      className="w-full shadow-lg h-[60px] backdrop-blur-[10px] flex justify-center fixed top-0 z-50 px-[50px]"
+      className="w-full shadow-lg h-[60px] backdrop-blur-[10px] justify-center fixed top-0 z-50 px-[50px] md:flex hidden"
       style={{ backgroundColor: "rgb(25, 29, 45, 0.8)" }}
     >
       <div className="h-full flex items-center justify-center">

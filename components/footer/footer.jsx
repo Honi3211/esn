@@ -45,7 +45,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="h-[200px] w-full bg-[#0f111b] flex flex-col justify-center items-center">
+    <div className="h-[200px] w-full bg-[#0f111b] flex-col justify-center items-center md:flex hidden">
       <div className="flex justify-center items-center border-b border-[#ffffff] pb-[20px] ">
         <img
           src={esnFullWhite.default.src}
